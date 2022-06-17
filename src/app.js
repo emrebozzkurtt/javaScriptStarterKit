@@ -1,36 +1,30 @@
-console.log("Merhaba Kodlama.io")
+console.log("Merhaba JS")
 
-//JS type safe değildir
-let dolarBugun = 9.30
+var dolarDun = 9.20
 
-let dolarDun = 9.20
-dolarDun = "9.20"
+console.log("(var) dolarDun: " + dolarDun)
+let dolarBugun
+console.log("(let) dolarBugun: " + dolarBugun)
 {
-    let dolarDun = 9.10
+    var dolarDun = 9.10
+    let dolarBugun = 10.20
 }
 
-console.log(dolarDun)
+console.log("(var) dolarDun: " + dolarDun)
+console.log("(let) dolarBugun: " + dolarBugun)
+console.log("-- var ayraç içlerinden etkilenir --")
+console.log("-- let ayraç içlerinden etkilenmez --")
 
-const euroDun = 11.2
-//euroDun = 11
+const sabitKur = 15
+console.log("(const) sabitKur: " + sabitKur)
+console.log("-- const üzerinde değişiklik yapılamaz --")
 
-console.log(euroDun)
 
-//array
-//camelCasing
-//PascalCasing
-let konutKredileri = ["Konut kredisi","Emlak Konut Kredisi","Kamu Konut Kredisi","Özel Konut Kredisi"]
+let konutKredileri = ["Konut Kredisi","Emlak Konut Kredisi","Kamu Konut Kredisi"]
+console.log(konutKredileri)
 
 console.log("<ul>")
-for(let i = 0;i<konutKredileri.length;i++){
-    console.log("<li>"+konutKredileri[i]+"</li>")
+for(let i=0; i<konutKredileri.length; i++){
+    console.log("<li>" + konutKredileri[i] + "</li>")
 }
 console.log("</ul>")
-
-{/* <ul>
-    <li>Konut kredisi</li>
-    <li>Emlak Konut Kredisi</li>
-    <li>Kamu Konut Kredisi</li>
-</ul> */}
-
-console.log(konutKredileri)
