@@ -10,7 +10,11 @@ let sayHello = (param)=>{
     console.log("Merhaba JS " + param)
 }
 
-sayHello("asd") 
+sayHello("asd")
+
+let asd = () => 0.18
+console.log(asd())
+console.log(asd)
 
 let product1 = {productName:"Elma",unitPrice:10,quantity:5}
 let product2 = {productName:"Karpuz",unitPrice:20,quantity:18}
@@ -89,3 +93,4 @@ console.log(icAnadolu)
 console.log(marmara)
 console.log(icAnadoluSehirleri)
 console.log([icAnadoluSehirleri,marmaraSehirleri])
+
